@@ -1,0 +1,234 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Billy McEntee</title>
+  <meta name="description" content="Billy McEntee">
+
+  <meta property="og:title" content="Billy McEntee">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css?v=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Montserrat&display=swap" rel="stylesheet">
+  <script type='text/javascript' src='page-script.js'></script>
+  <script type='text/javascript' src='article-list.js'></script>
+</head>
+
+<body>
+  <ul class='header-bar'>
+      <li class='main-title title'>
+          Billy McEntee
+      </li>
+      <ul class='page-list'>
+          <li class='page-list-item' id='home-page-button'>home</li>
+          <li class='page-list-item' id='about-page-button'>about</li>
+          <li class='page-list-item' id='arts-journalism-page-button'>arts journalism</li>
+          <li class='page-list-item' id='scripts-and-screenplays-page-button'>scripts and screenplays</li>
+          <li class='page-list-item' id='podcast-page-button'>podcast</li>
+          <li class='page-list-item' id='awards-and-press-page-button'>awards and press</li>
+          <li class='page-list-item' id='contact-page-button'>contact</li>
+      </ul>
+      <li class='mobile-list-expander' id='mobile-list-expander'>☰</li>
+  </ul>
+  <ul class='mobile-page-list closed' id='mobile-page-list'>
+      <li class='page-list-item' id='mobile-home-page-button'>home</li>
+      <li class='page-list-item' id='mobile-about-page-button'>about</li>
+      <li class='page-list-item' id='mobile-arts-journalism-page-button'>arts journalism</li>
+      <li class='page-list-item' id='mobile-scripts-and-screenplays-page-button'>scripts and screenplays</li>
+      <li class='page-list-item' id='mobile-podcast-page-button'>podcast</li>
+      <li class='page-list-item' id='mobile-awards-and-press-page-button'>awards and press</li>
+      <li class='page-list-item' id='mobile-contact-page-button'>contact</li>
+  </ul>
+
+  <div class='content-pages' id='content-container'>
+      <div class='page' id='home-page'>
+          <!-- <img class='cover-photo'  src='images/moose.jpg'></img> -->
+          <img class='cover-photo'  src='images/cover-photo.png'></img>
+          <div class='page-description float-box invisible' id='homepage-box'>
+              <div class='homepage-blurb'>
+                  Writer, Editor, Queer Storyteller
+              </div>
+              <div class='button-tray'>
+                <div class='clickable' id='secondary-about-link'>
+                    About Me
+                </div>
+                <div class='clickable' id='secondary-contact-link'>
+                    Say Hi
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class='page nondisplay' id='about-page'>
+          <div class='page-title title'>About</div>
+          <div class='page-content'>
+              <img class='page-image' src='images/about-photo-3.jpg' alt='Billy McEntee'>
+              <div class='page-description'>
+                  Billy McEntee is a Brooklyn-based writer.
+                  <br><br>
+                  As an arts journalist and critic, he’s written for <em>The Washington Post</em>, <em>Vanity Fair</em>, <em>Travel + Leisure</em>, <em>American Theatre</em>, <em>them</em>, and <em>Observer</em>, amongst others. He’s also the Theater Editor at <em>The Brooklyn Rail</em>, where he initiated the free, independent paper’s Rail Shorts series: published short works by playwrights.
+                  <br><br>
+                  As an artist, he wrote the play <em>Cory and Smin’s Love Conquers the Earth</em> (featured in <em>Time Out New York</em> and recipient of the Queens Arts Council grant) and the short film <em>Lindsay Lindsey Lyndsey</em> (honors from Santa Barbara International Screenplay Awards, LGBTQ Unbordered International Film Festival, and others).
+                  <br><br>
+                  Billy has taught with The School of The New York Times, co-hosts the food and cultural podcast “Lasagna Time with Billy and Kyle,” and was a Fellow at the 2018 National Critics Institute at the Eugene O’Neill Theater Center. Billy graduated from Boston College and loves all things Amy Adams, Kazuo Ishiguro, and New Jersey.
+                  <br>
+                  <br>
+                  <a class='social-link' href='https://twitter.com/wjmcentee'><img src='images/twitter-icon.svg' alt='twitter logo'></a>
+                  <a class='social-link' href='https://www.linkedin.com/in/billy-mcentee-36916332'><img src='images/linkedin-icon.svg' alt='linkedin logo'></a>
+              </div>
+          </div>
+      </div>
+
+      <div class='page nondisplay' id='arts-journalism-page'>
+          <div class='page-title title'>Arts Journalism</div>
+          <div class='option-tabs'>
+              <div class='option-tab selected-tab' id='organize-by-article'>By Article</div>
+              <div class='option-tab' id='organize-by-outlet'>By Outlet</div>
+          </div>
+          <div id='arts-journalism-articles'>
+              <!-- Items are added to here when the page loads, in this format: -->
+              <!-- <a class="content-item" href="#">
+                  <img class="content-image" src="" alt="">
+                  <div class="item-title"></div>
+                  <div class="item-detail"></div>
+              </a> -->
+              <!-- For the content, see article-list.js -->
+          </div>
+      </div>
+
+      <div class='page nondisplay' id='scripts-and-screenplays-page'>
+          <div class='page-title title'>Scripts and Screenplays</div>
+          <ul class='page-content page-content-list'>
+              <li class='category-header'>Cory and Smin’s Love Conquers the Earth</li>
+              <li class='content-list-item scripts-section'>
+                  <img class='scripts-image' src='images/cory-and-smin.jpg' alt='Photo from a production of Cory and Smin’s Love Conquers the Earth'>
+                  <div class='scripts-text'>
+                      <em>Cory and Smin’s Love Conquers the Earth</em><br>
+                      Written by Billy McEntee<br>
+                      Directed by Charles Quittner
+                      <br><br>
+                      Productions<br>
+                      Boscoe Barles Backyard Center for the Performing Arts (2020)<br>
+                      Kingsland Flowers (2021)<br>
+                      Smiling Hogshead Ranch (2021)*
+                      <br><br>
+                      *recipient of a grant from the Queens Arts Council
+                      <br><br>
+                      <em>Press</em><br>
+                      A preview in <em><a href="https://www.timeout.com/newyork/theater/cory-and-smins-love-conquers-the-earth">Time Out New York</a></em><br>
+                      “An incredible queer masterpiece” —Sidewalkkilla<br>
+                      “Lovely, ephemeral, intimate” —<em><a href="https://tokentheatrefriends.com/2020/11/09/review-cory-smin-and-a-broken-tropopause/">Token Theatre Friends</a></em>
+                      <br><br>
+                      <em>Description</em><br>
+                      A few years from now, when cities have banned gas-fueled cars and drag queens host gardening clubs, two enamored teens on opposite sides of the country struggle to meet in the middle: Cory wants a relationship, Smin wants a revolution. Each is difficult to attain when there are college essays and manifestos to write, mom's shopping to do, and maybe a planet to save. Anthemic and bawdy, Cory and Smin's Love Conquers the Earth is a queer "eco-medy" giving Zoomers, Boomers, and everyone in between a future to fear — or believe in.
+                      <br><br>
+                      Cast<br>
+                      Three actors (two teenagers, one in their 30s+ — race and gender flexible)
+                  </div>
+              </li>
+              <li class='category-header'>Lindsay Lindsey Lyndsey</li>
+              <li class='content-list-item scripts-section'>
+                  <div class='scripts-text'>
+                      <em>Lindsay Lindsey Lyndsey</em><br>
+                      Written and produced by Billy McEntee<br>
+                      Directed by Claire Mathiot<br>
+                      Featuring Cam Cronin, Daphne Overbeck, and Dan Kuan Peeples
+                      <br><br>
+                      <em>Description</em><br>
+                      Three childhood friends reunite and are unmoored — and disarmed — by each other's developed sense of identity. "Lindsay Lindsey Lyndsey" is a new short film about queer, triangular friendship and how who we are is both individually and communally informed. The film premieres in 2022.
+                      <br><br>
+                      <em>Awards</em><br>
+                      Best Short Screenplay — LGBTQ Unbordered International Film Festival<br>
+                      Best Short Screenplay — Paris Play Film Festival<br>
+                      Honorable Mention — Santa Barbara International Film Festival
+                  </div>
+                  <img class='scripts-image' src='images/lindsay-lindsey-lyndsey.jpg' alt='Production photo from Lindsay Lindsey Lyndsey'>
+              </li>
+          </ul>
+      </div>
+
+      <div class='page nondisplay' id='podcast-page'>
+          <div class='page-title title'>Podcast</div>
+          <div class='page-content'>
+              <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/lasagna-time-with-billy-and-kyle/id1551481408"></iframe>
+              <div class='page-description'>
+                <a href="https://podcasts.apple.com/us/podcast/lasagna-time-with-billy-and-kyle/id1551481408">Lasagna Time with Billy and Kyle</a>
+                <br><br>
+                In this new podcast, cultural critics Billy McEntee and Kyle Turner dissect the role of food and drink in film, TV, theater, books, and more. Guests have included Pulitzer Prize finalists Soraya Nadia McDonald, Michael Breslin, Patrick Foley, and Will Arbery; <em>The New Yorker</em>’s Rachel Syme; <em>Vanity Fair</em> chief critic Richard Lawson; author Mark Harris; comedian Jay Jurden; actress Bayne Gibby, and more. <a href="https://podcasts.apple.com/us/podcast/lasagna-time-with-billy-and-kyle/id1551481408">Listen now!</a>
+              </div>
+          </div>
+      </div>
+
+      <div class='page nondisplay' id='awards-and-press-page'>
+          <div class='page-title title'>Awards and Press</div>
+          <ul class='page-content page-content-list awards-and-press-list'>
+              <li class='content-list-item'>
+                  <div class='content-list-item-title' href='#'>Awards for <em>Lindsay Lindsey Lyndsey</em></div>
+                  <div>
+                      Best Short Screenplay — LGBTQ Unbordered International Film Festival
+                  </div>
+                  <div>
+                      Best Short Screenplay — Paris Play Film Festival
+                  </div>
+                  <div>
+                      Honorable Mention — Santa Barbara International Film Festival
+                  </div>
+              </li>
+              <li class='content-list-item'>
+                  <div class='content-list-item-title' href='#'>Grants</div>
+                  <div>
+                      Queens Arts Council grant for presenting an outdoor theatrical experience for Queens residents (August 2021, for the play Cory and Smin’s Love Conquers the Earth, presented at Smiling Hogshead Ranch, one of New York City’s largest community gardens)
+                  </div>
+                  <div>
+                      Colorado Tourism Office grant to investigate the role of COVID and Instagram on tourism in Colorado mountain towns (June 2021, article written for Travel + Leisure)
+                  </div>
+              </li>
+              <li class='content-list-item'>
+                  <div class='content-list-item-title' href='#'>Press for Cory and Smin’s Love Conquers the Earth</div>
+                  <div>
+                      A preview article in <a href="https://www.timeout.com/newyork/theater/cory-and-smins-love-conquers-the-earth">Time Out New York</a>
+                  </div>
+                  <div>
+                      A review in <a href="https://tokentheatrefriends.com/2020/11/09/review-cory-smin-and-a-broken-tropopause/">Token Theatre Friends</a>
+                  </div>
+                  <div>
+                      A review in <a href="https://joeysims.substack.com/p/round-up-theater-making-it-work">Transitions</a>
+                  </div>
+                  <div>
+                      An illustration of the play by <a href="https://www.queenscouncilarts.org/calendar/2021/hunter-kaufer">Bill Roundy for The Brooklyn Paper</a>
+                  </div>
+                  <div>
+                      An announcement in <a href="https://www.broadwayworld.com/article/Loading-Dock-Theatre-Announces-2020-Forklift-Season-20201008">BroadwayWorld</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+
+      <div class='page nondisplay' id='contact-page'>
+          <div class='page-title title'>Contact</div>
+          <div class='page-content'>
+              <img class='page-image' src='images/about-photo-2.jpg' alt='Billy McEntee'>
+              <div class='page-description'>
+                  Billy is a freelance writer available for hire. He writes criticism, company blogs and website copy, and queer scripts.
+                  <br><br>
+                  Get in touch at williamjude92 [at] gmail [dot] com.
+                  <br>
+                  All photos by Jake White.
+                  <br>
+                  <br>
+                  <a class='social-link' href='https://twitter.com/wjmcentee'><img src='images/twitter-icon.svg' alt='twitter logo'></a>
+                  <a class='social-link' href='https://www.linkedin.com/in/billy-mcentee-36916332'><img src='images/linkedin-icon.svg' alt='linkedin logo'></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

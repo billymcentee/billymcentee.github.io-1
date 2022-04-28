@@ -1,0 +1,393 @@
+body {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #888;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+.page-image {
+    object-fit: scale-down;
+    object-position: top;
+}
+
+.header-bar, .page-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.header-bar {
+    align-items: center;
+    background: #fff;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.title {
+    /* font-family: 'Fraunces', serif; */
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+.main-title {
+    margin: 5px 0 0 20px;
+}
+
+.page-list {
+    list-style: none;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+
+.mobile-page-list, .mobile-list-expander {
+    display: none;
+}
+
+.page-list-item {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.page-list-item:hover {
+    color: #888;
+}
+
+.cover-photo {
+    height: 800px;
+    object-fit: cover;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 58px;
+    width: 100%;
+}
+
+.page-content {
+    border-top: 2px solid #ced;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.option-tabs {
+    border-bottom: 2px solid #ced;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+}
+
+.option-tab {
+    cursor: pointer;
+    padding: 15px;
+    transition: .2s;
+}
+
+.selected-tab {
+    background: #ced;
+    color: #888;
+}
+
+.option-tab:hover {
+    color: #888;
+}
+
+.wrap-list, .left-align-list {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-header {
+    font-size: 1.5em;
+    padding: 15px;
+    text-align: center;
+}
+
+.brand-logo {
+    height: 150px;
+    margin: 25px;
+    width: 350px;
+}
+
+.brand-logo > img {
+    height: 150px;
+    max-width: 85%;
+    object-fit: contain;
+    width: 350px;
+}
+
+.left-align-list {
+    justify-content: left;
+}
+
+.page-title {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.page-image, .page-description {
+    margin: 10px;
+    width: 50%;
+}
+
+.page-description {
+    color: #888;
+    line-height: 30px;
+    font-size: 1.25em;
+    padding: 20px 50px 20px 50px;
+}
+
+.float-box {
+    align-self: flex-end;
+    background: #fff;
+    opacity: 1;
+    position: fixed;
+    top: 60%;
+    transition: 1s;
+}
+
+.invisible {
+    opacity: 0;
+    top: 70%;
+}
+
+.homepage-blurb {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.button-tray {
+    display: flex;
+    flex-direction: row;
+}
+
+.clickable {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+.clickable:hover {
+    opacity: .6;
+}
+
+.content-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.content-image {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+}
+
+.left-align-content-image {
+    object-position: left;
+}
+
+.right-align-content-image {
+    object-position: right;
+}
+
+.item-title {
+    margin-top: 10px;
+    font-size: 1.25em;
+}
+
+.item-detail {
+    align-self: flex-start;
+    color: #888;
+    font-size: .85em;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.page-content-list {
+    align-items: left;
+    flex-direction: column;
+}
+
+.content-list-item {
+    padding: 10px;
+}
+
+.content-list-item-title {
+    font-size: 1.25em;
+}
+
+.content-list-item > div {
+    color: #888;
+}
+
+.social-link {
+    opacity: 0.6;
+}
+
+.social-link:hover {
+    opacity: 0.3;
+}
+
+.nondisplay {
+    display: none;
+}
+
+.scripts-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.scripts-image, .scripts-text {
+    width: 50%;
+}
+
+.scripts-text {
+    padding: 0 20px 0 20px;
+}
+
+.awards-and-press-list > .content-list-item > .content-list-item-title {
+    color: #000;
+}
+
+.awards-and-press-list > .content-list-item > div {
+    padding: 5px;
+}
+
+@media screen and (max-width: 940px) {
+    .page-list {
+        display: none;
+    }
+
+    .mobile-list-expander {
+        cursor: pointer;
+        font-size: 2em;
+        padding: 20px 30px 20px 30px;
+        display: flex;
+    }
+
+    .mobile-page-list {
+        list-style: none;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        position: fixed;
+        padding: 0 20px 0 0;
+        right: 0;
+        top: 60px;
+        width: 90%;
+        z-index: 1;
+    }
+
+    .closed {
+        display: none;
+    }
+
+    .header-bar {
+        border-bottom: 2px solid #ced;
+    }
+
+    .page {
+        margin-top: 85px;
+    }
+
+    .page-content-list {
+        padding: 0;
+    }
+
+    .page-content, .scripts-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-content {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .page-description, .scripts-text {
+        padding: 0;
+    }
+
+    .category-header {
+        border-top: 2px solid #ced;
+    }
+
+    .scripts-text {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .page-image, .page-description, .scripts-image, .scripts-text {
+        width: 100%;
+    }
+
+    .option-tabs {
+        font-size: 1.35em;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .float-box {
+        align-self: center;
+        padding: 30px;
+        top: 20%;
+        transition: 1s;
+        width: 80%;
+    }
+
+    .social-link > img {
+        width: 100px;
+    }
+
+    .button-tray {
+        flex-direction: column;
+    }
+
+    .clickable {
+        font-size: 1.2em;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 25px 10px 25px 10px;
+        text-align: center;
+    }
+}
