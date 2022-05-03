@@ -20,7 +20,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Montserrat&display=swap" rel="stylesheet">
   <script type='text/javascript' src='page-script.js'></script>
-  <script type='text/javascript' src='article-list.js'></script>
 </head>
 
 <body>
@@ -74,7 +73,7 @@
               <div class='page-description'>
                   Billy McEntee is a Brooklyn-based writer.
                   <br><br>
-                  As an arts journalist and critic, he’s written for <em>The Washington Post</em>, <em>Vanity Fair</em>, <em>Travel + Leisure</em>, <em>American Theatre</em>, <em>them</em>, and <em>Observer</em>, amongst others. He’s also the Theater Editor at <em>The Brooklyn Rail</em>, where he initiated the free, independent paper’s Rail Shorts series: published short works by playwrights.
+                  As an arts journalist and critic, he’s written for <em>The Washington Post</em>, <em>Vanity Fair</em>, <em>Travel + Leisure</em>, <em>American Theatre</em>, <em>them</em>, and <em>Observer</em>, amongst others. He’s also the Theater Editor at <em>The Brooklyn Rail</em>.
                   <br><br>
                   As an artist, he wrote the play <em>Cory and Smin’s Love Conquers the Earth</em> (featured in <em>Time Out New York</em> and recipient of the Queens Arts Council grant) and the short film <em>Lindsay Lindsey Lyndsey</em> (honors from Santa Barbara International Screenplay Awards, LGBTQ Unbordered International Film Festival, and others).
                   <br><br>
@@ -93,14 +92,197 @@
               <div class='option-tab selected-tab' id='organize-by-article'>By Article</div>
               <div class='option-tab' id='organize-by-outlet'>By Outlet</div>
           </div>
-          <div id='arts-journalism-articles'>
-              <!-- Items are added to here when the page loads, in this format: -->
-              <!-- <a class="content-item" href="#">
-                  <img class="content-image" src="" alt="">
-                  <div class="item-title"></div>
-                  <div class="item-detail"></div>
-              </a> -->
-              <!-- For the content, see article-list.js -->
+          <div id='arts-journalism-articles-by-article'>
+              <div class="category-header">Theater</div>
+              <div class="page-content wrap-list">
+                  <a href="https://www.vanityfair.com/style/2018/04/pulitzers-lynn-nottage-play-mlimas-tale" class="content-item">
+                      <img src="https://media.vanityfair.com/photos/5acfc0690c2c5233a346e8c8/master/w_960,c_limit/t-Milmas-Tale.png" class="content-image">
+                      <div class="item-title">With Two Pulitzers to Her Name, Lynn Nottage Knows She’s Here for the Longer Journey</div>
+                      <div class="item-detail">Vanity Fair</div>
+                  </a>
+                  <a href="https://observer.com/2021/10/david-byrne-shows-us-his-and-invites-us-to-build-our-own-american-utopia/" class="content-item">
+                      <img src="https://observer.com/wp-content/uploads/sites/2/2021/10/AMERICAN_UTOPIA_S_0036s.jpg?resize=970,647" class="content-image">
+                      <div class="item-title">David Byrne Shows Us His — and Invites Us to Build Our Own — ’American Utopia’</div>
+                      <div class="item-detail">Observer</div>
+                  </a>
+                  <a href="https://brooklynrail.org/2019/04/theater/In-Pursuit-of-the-Urgently-Inexplicable-Will-Arbery-and-His-Plays" class="content-item">
+                      <img src="https://brooklynrail-web.imgix.net/article_image/image/23673/mcentee-1.jpg?w=440&q=80&fit=max" class="content-image">
+                      <div class="item-title">Will Arbery: In Pursuit of the Urgently Inexplicable</div>
+                      <div class="item-detail">The Brooklyn Rail</div>
+                  </a>
+              </div>
+              <div class="category-header">Film</div>
+              <div class="page-content wrap-list">
+                  <a href="https://www.washingtonpost.com/entertainment/junebug-is-still-defined-by-its-north-south-divisions-and--now-more-than-ever--the-compassion-that-transcends-them/2020/08/12/5947c5d6-d727-11ea-930e-d88518c57dcc_story.html" class="content-item">
+                      <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HXOZIJWXHEI6VJ4IFTUGZ2ARFE.jpg&w=916" class="content-image">
+                      <div class="item-title">‘Junebug’ is still defined by its North-South divisions and — now more than ever — the compassion that transcends them</div>
+                      <div class="item-detail">The Washington Post</div>
+                  </a>
+                  <a href="https://www.vanityfair.com/style/2018/09/jane-anderson-glenn-close-mother-of-the-maid" class="content-item">
+                      <img src="https://media.vanityfair.com/photos/5baa6a7dd23564139e45cd09/master/w_2560%2Cc_limit/Embed-Jane-Anderson-Glenn-Close.png" class="content-image left-align-content-image">
+                      <div class="item-title">The Writer Behind Both of Glenn Close’s “Breathtaking” Performances This Year</div>
+                      <div class="item-detail">Vanity Fair</div>
+                  </a>
+                  <a href="https://www.them.us/story/where-are-hollywoods-love-letters-to-queer-kids" class="content-item">
+                      <img src="https://media.them.us/photos/5e39f092c55f9900084113d3/master/w_2560%2Cc_limit/queer-adolescent-film.jpg" class="content-image">
+                      <div class="item-title">Seen On Screen: Where Are Hollywood’s Love Letters to Queer Kids?</div>
+                      <div class="item-detail">them</div>
+                  </a>
+              </div>
+              <div class="category-header">TV</div>
+              <div class="page-content wrap-list">
+                  <a href="https://www.them.us/story/jeff-hiller-somebody-somewhere-q-and-a" class="content-item">
+                      <img src="https://media.them.us/photos/61f9aa83c22bd606cd67e62a/master/w_2560%2Cc_limit/jeff-hiller.jpg" class="content-image">
+                      <div class="item-title">How Jeff Hiller Smashed Gay TV Tropes on HBO’s <i>Somebody Somewhere</i></div>
+                      <div class="item-detail">them</div>
+                  </a>
+                  <a href="https://www.them.us/story/three-tv-actors-who-queered-masculinity-sex-and-the-city-girls-friends" class="content-item">
+                      <img src="https://media.them.us/photos/619c033f7a8211c3e6797f17/master/w_2560%2Cc_limit/tv-gay.jpg" class="content-image left-align-content-image">
+                      <div class="item-title">Remembering Three TV Actors Who Queered Masculinity</div>
+                      <div class="item-detail">them</div>
+                  </a>
+                  <a href="https://observer.com/2019/06/big-little-lies-season-2-big-questions-for-season-end/" class="content-item">
+                      <img src="https://observer.com/wp-content/uploads/sites/2/2019/06/610736b5411caf78196bc1679febf7c9e98dc15079e1373abf2e0c7f1322ac7d576f1b0a4cf85d503f372471be70edeb.jpg?resize=970,647" class="content-image">
+                      <div class="item-title">5 Questions ‘Big Little Lies’ Season 2 Is Begging You to Ask</div>
+                      <div class="item-detail">Observer</div>
+                  </a>
+              </div>
+              <div class="category-header">Food and Travel</div>
+              <div class="page-content wrap-list">
+                  <a href="https://www.travelandleisure.com/trip-ideas/colorado-ghost-town-instagram-tourists-wine-scene" class="content-item">
+                      <img src=https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F08%2F11%2Fsilver-plume-colorado-CO0821.jpg&q=60" class="content-image">
+                      <div class="item-title">Colorado's Ghost Towns Are Taking Over Instagram Thanks to Its Booming Wine Scene, Chic Bars, and Charming Hotels</div>
+                      <div class="item-detail">Travel and Leisure</div>
+                  </a>
+                  <a href="https://greenpointers.com/2021/09/16/at-philomenas-cozy-vibes-scrumptious-drinks-and-infused-ice/" class="content-item">
+                      <img src="https://i2.wp.com/greenpointers.com/app/uploads/2021/09/PickledCrudite.jpg?w=1200&ssl=1" class="content-image">
+                      <div class="item-title">At Philomena’s, Cozy Vibes, Crushable Drinks, and Infused Ice</div>
+                      <div class="item-detail">Greenpointers</div>
+                  </a>
+                  <a href="https://www.edgemedianetwork.com/story.php?311374" class="content-item">
+                      <img src="https://www.edgemedianetwork.com/display/viewimage_storyMain.php?applicationID=0&id=311374&maxwidth=700" class="content-image">
+                      <div class="item-title">Meet Medellín: South America's Undersung Queer Mecca</div>
+                      <div class="item-detail">EDGE</div>
+                  </a>
+              </div>
+              <div class="category-header">Queer Culture</div>
+              <div class="page-content wrap-list">
+                  <a href="https://www.edgemedianetwork.com/story.php?ch=news&sc=aids&sc2=&id=305332" class="content-item">
+                      <img src="https://www.edgemedianetwork.com/display/viewimage_storyMain.php?applicationID=0&id=305332&maxwidth=700" class="content-image">
+                      <div class="item-title">40 Years Later: Stigma and Progress Collide Since the Onset of the AIDS Crisis</div>
+                      <div class="item-detail">EDGE</div>
+                  </a>
+                  <a href="https://www.them.us/story/iconic-tv-couples-gay-in-my-mind" class="content-item">
+                      <img src="https://media.them.us/photos/61df3675132b6512bbb0028e/master/w_2560%2Cc_limit/gimm-couples-.jpg" class="content-image">
+                      <div class="item-title">These Iconic TV Couples Are Gay in My Mind</div>
+                      <div class="item-detail">them</div>
+                  </a>
+                  <a href="https://www.edgemedianetwork.com/story.php?ch=style&sc=grooming&sc2=&id=302203" class="content-item">
+                      <img src="https://www.edgemedianetwork.com/display/viewimage_storyMain.php?applicationID=0&id=302203&maxwidth=700" class="content-image">
+                      <div class="item-title">Is the Fragrance Industry Finally Breaking the Gender Binary?</div>
+                      <div class="item-detail">EDGE</div>
+                  </a>
+              </div>
+              <div class="category-header">Books</div>
+              <div class="page-content wrap-list">
+                  <a href="http://www.newnownext.com/harry-potter-queer-lgbtq-characters-jk-rowling/10/2018/" class="content-item">
+                      <img src="http://logoonline.mtvnimages.com/uri/mgid:ao:image:logotv.com:662079?quality=0.8&format=jpg&width=1800&height=1012" class="content-image">
+                      <div class="item-title">Harry Potter and the Relentless Queerbaiting: Why Won’t the Magical Closet Be Unlocked?</div>
+                      <div class="item-detail">NewNowNext</div>
+                  </a>
+                  <a href="http://www.newnownext.com/when-brooklyn-queer-hugh-ryan/02/2019/" class="content-item">
+                      <img src="http://logoonline.mtvnimages.com/uri/mgid:ao:image:logotv.com:668445?quality=0.8&format=jpg&width=1800&height=1012" class="content-image">
+                      <div class="item-title">A Borough’s History Comes Out of the Closet in “When Brooklyn Was Queer”</div>
+                      <div class="item-detail">NewNowNext</div>
+                  </a>
+                  <a href="https://www.edgemedianetwork.com/story.php?314660" class="content-item">
+                      <img src="https://www.edgemedianetwork.com/display/viewimage_storyMain.php?applicationID=0&id=314660&maxwidth=700" class="content-image">
+                      <div class="item-title">Meet Queer Working Class Hero, Booker Award-Winning Novelist Douglas Stuart</div>
+                      <div class="item-detail">EDGE</div>
+                  </a>
+              </div>
+              <div class="category-header">Faith</div>
+              <div class="page-content wrap-list">
+                  <a href="https://www.bkmag.com/2017/01/10/place-st-lydias-brooklyns-progressive-church-gem/" class="content-item">
+                      <img src="https://www.bkmag.com/wp-content/uploads/2017/01/Photo1-1600x1067.jpg" class="content-image">
+                      <div class="item-title">A Place for All at St. Lydia’s: Brooklyn’s Progressive Church Gem</div>
+                      <div class="item-detail">Brooklyn Magazine</div>
+                  </a>
+                  <a href="https://www.them.us/story/the-queer-internet-and-my-church" class="content-item">
+                      <img src="https://media.them.us/photos/5ec6d6e7d00096d0eb324157/master/w_2560%2Cc_limit/queer-internet-church.jpg" class="content-image">
+                      <div class="item-title">"You Are Very Welcome Here": The Queer Internet, and My Church</div>
+                      <div class="item-detail">them</div>
+                  </a>
+              </div>
+              <div class="category-header">Music and Podcasts</div>
+              <div class="page-content wrap-list">
+                  <a href="https://brooklynrail.org/2016/09/music/all-roads-and-genres-lead-to-tigue" class="content-item">
+                    <img src="https://brooklynrail-web.imgix.net/article_image/image/17464/McEntee-web1.jpg?w=440&q=80&fit=max" class="content-image">
+                    <div class="item-title">All Roads (And Genres) Lead To TIGUE</div>
+                    <div class="item-detail">The Brooklyn Rail</div>
+                  </a>
+                  <a href="https://observer.com/2021/06/queers-profit-off-of-straights-sperm-in-hot-white-heist/" class="content-item">
+                      <img src="https://observer.com/wp-content/uploads/sites/2/2021/06/Audible-Original_Hot-White-Heist_HiRes-Cover-Art.jpg?resize=970,970" class="content-image">
+                      <div class="item-title">Queers Profit Off of Straights’ Sperm in ‘Hot White Heist’</div>
+                      <div class="item-detail">Observer</div>
+                  </a>
+              </div>
+          </div>
+          <div id='arts-journalism-articles-by-outlet' class='nondisplay'>
+              <a class="brand-logo" href="https://www.washingtonpost.com/entertainment/junebug-is-still-defined-by-its-north-south-divisions-and--now-more-than-ever--the-compassion-that-transcends-them/2020/08/12/5947c5d6-d727-11ea-930e-d88518c57dcc_story.html" target="_blank">
+                  <img src="images/brand_logos/washington-post.png" alt="The Washington Post Logo">
+              </a>
+              <a class="brand-logo" href="https://www.vanityfair.com/contributor/billy-mcentee" target="_blank">
+                  <img src="images/brand_logos/vanity-fair.png" alt="Vanity Fair Logo">
+              </a>
+              <a class="brand-logo" href="https://www.travelandleisure.com/trip-ideas/colorado-ghost-town-instagram-tourists-wine-scene" target="_blank">
+                  <img src="images/brand_logos/travel-and-leisure.png" alt="Travel and Leisure Logo">
+              </a>
+              <a class="brand-logo" href="https://observer.com/author/billy-mcentee/" target="_blank">
+                  <img src="images/brand_logos/observer.png" alt="Observer Logo">
+              </a>
+              <a class="brand-logo" href="https://www.them.us/contributor/billy-mcentee" target="_blank">
+                  <img src="images/brand_logos/them.png" alt="them Logo">
+              </a>
+              <a class="brand-logo" href="https://playbill.com/article/tony-award-winner-kelli-ohara-completes-the-2021-new-york-city-marathon" target="_blank">
+                  <img src="images/brand_logos/playbill.png" alt="Playbill Logo">
+              </a>
+              <a class="brand-logo" href="https://www.backstage.com/magazine/article/acting-schools-coronavirus-zoom-remote-digital-70378/" target="_blank">
+                  <img src="images/brand_logos/backstage.png" alt="Backstage Logo">
+              </a>
+              <a class="brand-logo" href="https://www.bkmag.com/2016/10/11/brooklyn-born-playwright-jordan-seavey-gives-spotlight-homos/" target="_blank">
+                  <img src="images/brand_logos/brooklyn-magazine.svg" alt="Brooklyn Magazine Logo">
+              </a>
+              <a class="brand-logo" href="https://howlround.com/commons/billy-mcentee" target="_blank">
+                  <img src="images/brand_logos/howlround-theatre-commons.svg" alt="HowlRound Logo">
+              </a>
+              <a class="brand-logo" href="http://www.newnownext.com/author/mcenteeb/" target="_blank">
+                  <img src="images/brand_logos/newnownext.jpg" alt="NewNowNext Logo">
+              </a>
+              <a class="brand-logo" href="https://brooklynrail.org/contributor/Billy-McEntee" target="_blank">
+                  <img src="images/brand_logos/brooklyn-rail.png" alt="The Brooklyn Rail Logo">
+              </a>
+              <a class="brand-logo" href="https://www.bc.edu/bc-web/bcnews/campus-community/alumni/curtain-call--eagles-on-broadway.html" target="_blank">
+                  <img src="images/brand_logos/boston-college-magazine.png" alt="Boston College Logo">
+              </a>
+              <a class="brand-logo" href="https://www.intomore.com/gaming/can-match-thirst-trap-caption/" target="_blank">
+                  <img src="images/brand_logos/into.png" alt="Into Logo">
+              </a>
+              <a class="brand-logo" href="https://news.holycross.edu/blog/2019/07/29/theater-in-a-contentious-age-holy-cross-alumnus-uses-theater-to-tackle-contemporary-questions/" target="_blank">
+                  <img src="images/brand_logos/college-of-the-holy-cross.png" alt="Holy Cross Logo">
+              </a>
+              <a class="brand-logo" href="https://www.americantheatre.org/byline/billy-mcentee/" target="_blank">
+                  <img src="images/brand_logos/american-theatre.bmp" alt="American Theater Logo">
+              </a>
+              <a class="brand-logo" href="https://www.edgemedianetwork.com/story.php?ch=style&sc=grooming&sc2=&id=302203" target="_blank">
+                  <img src="images/brand_logos/edge-media-network.png" alt="EDGE Logo">
+              </a>
+              <a class="brand-logo" href="https://www.culturebot.org/author/billy-mcentee/" target="_blank">
+                  <img src="images/brand_logos/culturebot-maximum-performance.png" alt="Culture Bot Logo">
+              </a>
+              <a class="brand-logo" href="https://greenpointers.com/author/williamm/" target="_blank">
+                  <img src="images/brand_logos/greenpointers.png" alt="Greenpointers Logo">
+              </a>
           </div>
       </div>
 
@@ -185,28 +367,28 @@
               <li class='content-list-item'>
                   <div class='content-list-item-title' href='#'>Grants</div>
                   <div>
-                      Queens Arts Council grant for presenting an outdoor theatrical experience for Queens residents (August 2021, for the play Cory and Smin’s Love Conquers the Earth, presented at Smiling Hogshead Ranch, one of New York City’s largest community gardens)
+                      Queens Arts Council grant for presenting an outdoor theatrical experience for Queens residents (August 2021, for the play <em>Cory and Smin’s Love Conquers the Earth</em>, presented at Smiling Hogshead Ranch, one of New York City’s largest community gardens)
                   </div>
                   <div>
-                      Colorado Tourism Office grant to investigate the role of COVID and Instagram on tourism in Colorado mountain towns (June 2021, article written for Travel + Leisure)
+                      Colorado Tourism Office grant to investigate the role of COVID and Instagram on tourism in Colorado mountain towns (June 2021, article written for <em>Travel + Leisure</em>)
                   </div>
               </li>
               <li class='content-list-item'>
                   <div class='content-list-item-title' href='#'>Press for Cory and Smin’s Love Conquers the Earth</div>
                   <div>
-                      A preview article in <a href="https://www.timeout.com/newyork/theater/cory-and-smins-love-conquers-the-earth">Time Out New York</a>
+                      A preview article in <a href="https://www.timeout.com/newyork/theater/cory-and-smins-love-conquers-the-earth"><em>Time Out New York</em></a>
                   </div>
                   <div>
-                      A review in <a href="https://tokentheatrefriends.com/2020/11/09/review-cory-smin-and-a-broken-tropopause/">Token Theatre Friends</a>
+                      A review in <a href="https://tokentheatrefriends.com/2020/11/09/review-cory-smin-and-a-broken-tropopause/"><em>Token Theatre Friends</em></a>
                   </div>
                   <div>
-                      A review in <a href="https://joeysims.substack.com/p/round-up-theater-making-it-work">Transitions</a>
+                      A review in <a href="https://joeysims.substack.com/p/round-up-theater-making-it-work"><em>Transitions</em></a>
                   </div>
                   <div>
-                      An illustration of the play by <a href="https://www.queenscouncilarts.org/calendar/2021/hunter-kaufer">Bill Roundy for The Brooklyn Paper</a>
+                      An illustration of the play by <a href="https://www.queenscouncilarts.org/calendar/2021/hunter-kaufer">Bill Roundy for <em>The Brooklyn Paper</em></a>
                   </div>
                   <div>
-                      An announcement in <a href="https://www.broadwayworld.com/article/Loading-Dock-Theatre-Announces-2020-Forklift-Season-20201008">BroadwayWorld</a>
+                      An announcement in <a href="https://www.broadwayworld.com/article/Loading-Dock-Theatre-Announces-2020-Forklift-Season-20201008"><em>BroadwayWorld</em></a>
                   </div>
               </li>
           </ul>
