@@ -78,66 +78,12 @@ let clearContent = () => {
 }
 
 let setupArtsJournalismSection = (organizeBy) => {
+    document.getElementById(`arts-journalism-articles-by-${organizeBy}`).classList.remove('nondisplay')
+    document.getElementById(`arts-journalism-articles-by-${organizeBy === 'article' ? 'outlet' : 'article'}`).classList.add('nondisplay')
     let newTab = document.getElementById(`organize-by-${organizeBy}`)
     let oldTab = document.getElementById(`organize-by-${
         organizeBy === 'article' ? 'outlet' : 'article'
     }`)
     newTab.classList.add('selected-tab')
     oldTab.classList.remove('selected-tab')
-    let section = document.getElementById('arts-journalism-articles')
-    let subsection;
-    while (section.firstChild) {
-        section.removeChild(section.firstChild);
-    }
-    if (organizeBy === 'article') {
-        let categories = {}
-        articles.forEach(article => {
-            if (!categories[article.category]) {
-                categories[article.category] = []
-            }
-            categories[article.category].push(article)
-        })
-        Object.keys(categories).forEach(categoryName => {
-            subsection = document.createElement('div')
-            subsection.className = 'page-content wrap-list'
-            let header = document.createElement('div')
-            header.className = 'category-header'
-            header.innerText = categoryName
-            section.appendChild(header)
-            section.appendChild(subsection)
-            categories[categoryName].forEach(article => {
-                let element = document.createElement('a')
-                element.className = 'content-item'
-                element.href = article.link
-                let image = document.createElement('img')
-                image.className = 'content-image'
-                if (article.imageAlign) {
-                    image.classList.add(`${article.imageAlign}-align-content-image`)
-                }
-                image.src = article.imageLink
-                element.appendChild(image)
-                let title = document.createElement('div')
-                title.innerText = article.title
-                title.className = 'item-title'
-                element.appendChild(title)
-                let outlet = document.createElement('div')
-                outlet.innerText = article.outlet
-                outlet.className = 'item-detail'
-                element.appendChild(outlet)
-                subsection.appendChild(element)
-            })
-        })
-    } else {
-        Object.keys(outletLogos).forEach(outlet => {
-            let element = document.createElement('a')
-            element.href = outletFeaturedArticles[outlet]
-            element.target = "_blank"
-            element.className = 'brand-logo'
-            let image = document.createElement('img')
-            element.appendChild(image)
-            image.src = `images/brand_logos/${outletLogos[outlet]}`
-            section.appendChild(element)
-            console.log(section)
-        })
-    }
 }
